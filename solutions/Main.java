@@ -37,6 +37,7 @@ public class Main {
                 Input: s = ["H","a","n","n","a","h"]
                 Output:    ["h","a","n","n","a","H"]
         */
+        System.out.println("Solucion reverseString");
         char [] s1 = {'h','e','l','l','o'};
         char [] s2 = {'H','a','n','n','a', 'h'};
         solution.reverseString((s1));
@@ -44,5 +45,13 @@ public class Main {
         solution.reverseString((s2));
         System.out.println(s2);
 
+        // firstUniqChar
+        System.out.println("Solucion firstUniqChar");
+        String s3 = "leetcode";
+        String s4 = "loveleetcode";
+        String s5 = "aabb";
+        System.out.println(solution.firstUniqChar(s3));
+        System.out.println(solution.firstUniqChar(s4));
+        System.out.println(solution.firstUniqChar(s5));
     }
 }

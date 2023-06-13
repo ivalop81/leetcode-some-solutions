@@ -55,4 +55,37 @@ public class Solution {
             i++; j--;
         }
     }
+
+    /*
+        Example 1:
+
+                    0 1 2 3 4 5 6 7    length = 8     length -1 = 7     i < s.length -1  j
+        Input: s = "l e e t c o d e"
+
+        Output: 0
+        Example 2:
+
+        Input: s = "loveleetcode"
+        Output: 2
+        Example 3:
+                     i j
+        Input: s = "aabb"
+        Output: -1
+     */
+    public int firstUniqChar(String s) {
+        int [] frecuency = new int [26];
+        // count how many times a particular letter appears in s. For example "aabb"
+        //    [2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+        //     a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z
+        for (int i = 0; i < s.length(); i++) {
+            frecuency[s.charAt(i) - 'a']++;
+        }
+
+        for (int i = 0; i < s.length(); i++) {
+            if ( frecuency[s.charAt(i) - 'a'] == 1) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
