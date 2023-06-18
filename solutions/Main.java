@@ -46,7 +46,7 @@ public class Main {
         System.out.println(s2);
 
         // firstUniqChar
-        System.out.println("Solucion firstUniqChar");
+        System.out.println("Solucion c");
         String s3 = "leetcode";
         String s4 = "loveleetcode";
         String s5 = "aabb";

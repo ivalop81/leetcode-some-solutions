@@ -88,4 +88,9 @@ public class Solution {
         }
         return -1;
     }
+
+    public int myAtoi(String s) {
+        return 0;
+    }
+
 }
